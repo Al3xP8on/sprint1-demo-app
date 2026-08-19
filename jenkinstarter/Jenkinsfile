@@ -25,7 +25,7 @@ pipeline {
             }
             post {
                 always {
-                    junit 'jenkinstarter/target/test-reports/*.xml'
+                    junit 'jenkinstarter/target/surefire-reports/*.xml'
                 }
             }
         }
